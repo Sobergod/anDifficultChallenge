@@ -1,25 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="component/component.css">
     <title>Document</title>
 </head>
+
 <body>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table td {
+            empty-cells: show
+        }
+
+        .hid {
+            display: none;
+            cursor: pointer;
+        }
+    </style>
     <div class="head">
-        <h3>钢筋下料单</h3>
+        <div class="nav">
+            <button>整理</button>
+            <button>计算</button>
+            <button class="dayin">打印</button>
+        </div>
     </div>
-    <div class="nav">
-        <div class="address"></div>
-        <div class="time"></div>
+    <div class="container m-table" style="float:left">
+        <div class="">
+            <table>
+                <tr>
+                    <th>直径</th>
+                    <th>图形</th>
+                    <th>开料长度</th>
+                    <th>条数</th>
+                </tr>
+                <tr height="80">
+                    <td width="150"></td>
+                    <td width="200" class="target21"></td>
+                    <td width="150"></td>
+                    <td width="150"></td>
+                </tr>
+            </table>
+
+        </div>
     </div>
-    <div class="wrap1">
-        
+    <div class="choosePic" style="float:left">
+        <div class="commponent-wrap">
+            <div class="c1" id="draggable3">
+                <div class="de hid">删除</div>
+                <img src="images/1.jpg" alt="">
+                <input class="c1-i1" type="text">
+                <input class="c1-i2" type="text">
+                <input class="c1-i3" type="text">
+                <input class="c1-i4" type="text">
+                <input class="c1-i5" type="text">
+                <input class="c1-i6" type="text">
+                <input class="c1-i7" type="text">
+                <input class="c1-i8" type="text">
+                <input class="c1-i9" type="text">
+            </div>
+        </div>
     </div>
-    <div class="wrap2">
-        
-    </div>
+    <div id="droppable"></div>
+    <script src="lib/jquery2.1.1.js"></script>
+    <script src="https://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" language="javascript">
+        //在页面加载完之后加载jquery
+        $().ready(function (e) {
+            //拖拽复制体
+            $("#draggable3").draggable({
+                helper: "clone",
+                cursor: "move"
+            });
+            //释放后
+            $('td[class^="target"]').droppable({
+                drop: function (event, ui) {
+                    $(this).children().remove();
+                    var source = ui.draggable.clone();
+                    $(this).on("click", ".de", function () {
+                        source.remove();
+                    })
+                    // $('<img/>', {
+                    //     style: 'display:none;',
+                    //     click: function () {
+                    //         source.remove();
+                    //     }
+                    // }).appendTo(source);
+                    source.mouseenter(function () {
+                        $(this).find(".de").show();
+                    });
+                    source.mouseleave(function () {
+                        $(this).find(".de").hide();
+                    });
+                    $(this).append(source);
+                }
+            });
+        });
+        $(".dayin").click(function () {
+            var val = $("td").eq(1).children(".c1").children("input").length;
+            var sum = 0;
+            for (var i = 0; i < val; i++) {
+                $("td").eq(2).html(sum);
+            }
+        })
+    </script>
 </body>
+
 </html>
