@@ -1,0 +1,60 @@
+/* 组件1 */
+
+td {
+    padding: 0;
+}
+.c1-i9 {
+    top: 20px;
+    left: 185px;
+}
+.c1 {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+.c1 img{
+    width:200px;
+    height: 50px;
+}
+.c1 input {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+}
+.c1-i1 {
+    top: 20px;
+    left: 5px;
+}
+.c1-i2 {
+    top: 30px;
+    left: 30px;
+}
+.c1-i3 {
+    top: 35px;
+    left: 60px;
+}
+.c1-i4 {
+    top: 25px;
+    left: 80px;
+}
+.c1-i5 {
+    top: 10px;
+    left: 95px;
+}
+.c1-i6 {
+    top: 25px;
+    left: 107px;
+}
+.c1-i7 {
+    top: 35px;
+    left: 135px;
+}
+.c1-i8 {
+    top: 30px;
+    left: 163px;
+}
+.c1-i9 {
+    top: 20px;
+    left: 185px;
+}

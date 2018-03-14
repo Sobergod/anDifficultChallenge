@@ -1,0 +1,27 @@
+table,
+table tr th,
+table tr td {
+    border: 1px solid tomato;
+}
+
+th:nth-child(1) {
+    width: 50px;
+}
+
+td:nth-child(2) {
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input {
+    /* border: none; */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.clear {
+    clear: both;
+}

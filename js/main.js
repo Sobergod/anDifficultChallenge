@@ -1,1 +1,4 @@
-console.log(1);
+$(document).ready(function(){
+    // $("td").click(function(){
+    // })
+})
