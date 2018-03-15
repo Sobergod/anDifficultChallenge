@@ -25,15 +25,170 @@
             cursor: pointer;
         }
     </style>
-    <div class="head">
+    <div class="option-head">
         <div class="nav">
             <button>整理</button>
-            <button>计算</button>
-            <button class="dayin">打印</button>
+            <button id="m_calculate">计算</button>
+            <button id="m_print">打印</button>
         </div>
     </div>
-    <div class="container m-table" style="float:left">
-        <div class="">
+    <div class="title-head">
+        <h1>钢筋下料单</h1>
+    </div>
+    <div class="container m-table">
+        <div class="first-table" style="float:left; margin-right:30px;">
+            <table>
+                <tr>
+                    <th>序号</th>
+                    <th>直径</th>
+                    <th>图形</th>
+                    <th>开料长度</th>
+                    <th>条数</th>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td></td>
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="secone-table" style="float:right">
             <table>
                 <tr>
                     <th>直径</th>
@@ -41,21 +196,28 @@
                     <th>开料长度</th>
                     <th>条数</th>
                 </tr>
-                <tr height="80">
-                    <td width="150"></td>
-                    <td width="200" class="target21"></td>
-                    <td width="150"></td>
-                    <td width="150"></td>
+                <tr height="40">
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
+                </tr>
+                <tr height="40">
+                    <td width="50"></td>
+                    <td width="50" id="target1"></td>
+                    <td width="50"></td>
+                    <td width="50"></td>
                 </tr>
             </table>
 
         </div>
     </div>
-    <div class="choosePic" style="float:left">
+    <div class="choosePic">
         <div class="commponent-wrap">
-            <div class="c1" id="draggable3">
+            <!-- 组件1 -->
+            <div class="all-c c1" id="draggable1">
                 <div class="de hid">删除</div>
-                <img src="images/1.jpg" alt="">
+                <img src="images/1.jpg" alt="形状1">
                 <input class="c1-i1" type="text">
                 <input class="c1-i2" type="text">
                 <input class="c1-i3" type="text">
@@ -65,6 +227,148 @@
                 <input class="c1-i7" type="text">
                 <input class="c1-i8" type="text">
                 <input class="c1-i9" type="text">
+            </div>
+            <!-- 组件2 -->
+            <div class="all-c c2" id="draggable2">
+                <div class="de hid">删除</div>
+                <img src="images/2.jpg" alt="形状2">
+                <input class="c2-i1" type="text">
+                <input class="c2-i2" type="text">
+                <input class="c2-i3" type="text">
+                <input class="c2-i4" type="text">
+                <input class="c2-i5" type="text">
+                <input class="c2-i6" type="text">
+            </div>
+            <!-- 组件3 -->
+            <div class="all-c c3" id="draggable3">
+                <div class="de hid">删除</div>
+                <img src="images/3.jpg" alt="形状3">
+                <input class="c3-i1" type="text">
+                <input class="c3-i2" type="text">
+                <input class="c3-i3" type="text">
+                <input class="c3-i4" type="text">
+                <input class="c3-i5" type="text">
+            </div>
+            <!-- 组件4 -->
+            <div class="all-c c4" id="draggable4">
+                <div class="de hid">删除</div>
+                <img src="images/4.jpg" alt="形状4">
+                <input class="c4-i1" type="text">
+                <input class="c4-i2" type="text">
+                <input class="c4-i3" type="text">
+                <input class="c4-i4" type="text">
+                <input class="c4-i5" type="text">
+                <input class="c4-i6" type="text">
+                <input class="c4-i7" type="text">
+            </div>
+            <!-- 组件5 -->
+            <div class="all-c c5" id="draggable5">
+                <div class="de hid">删除</div>
+                <img src="images/5.jpg" alt="形状5">
+                <input type="text" class="c5-i1">
+                <input type="text" class="c5-i2">
+                <input type="text" class="c5-i3">
+                <input type="text" class="c5-i4">
+                <input type="text" class="c5-i5">
+            </div>
+            <!-- 组件6 -->
+            <div class="all-c c6" id="draggable6">
+                <div class="de hid">删除</div>
+                <img src="images/6.jpg" alt="形状6">
+                <input type="text" class="c6-i1">
+                <input type="text" class="c6-i2">
+                <input type="text" class="c6-i3">
+                <input type="text" class="c6-i4">
+            </div>
+            <!-- 组件7 -->
+            <div class="all-c c7" id="draggable7">
+                <div class="de hid">删除</div>
+                <img src="images/7.jpg" alt="形状7">
+            </div>
+            <!-- 组件8 -->
+            <div class="all-c c8" id="draggable8">
+                <div class="de hid">删除</div>
+                <img src="images/8.jpg" alt="形状8">
+            </div>
+            <!-- 组件9 -->
+            <div class="all-c c9" id="draggable9">
+                <div class="de hid">删除</div>
+                <img src="images/9.jpg" alt="形状9">
+            </div>
+            <!-- 组件10 -->
+            <div class="all-c c10" id="draggable10">
+                <div class="de hid">删除</div>
+                <img src="images/10.jpg" alt="形状10">
+            </div>
+            <!-- 组件11 -->
+            <div class="all-c c11" id="draggable11">
+                <div class="de hid">删除</div>
+                <img src="images/11.jpg" alt="形状11">
+            </div>
+            <!-- 组件12 -->
+            <div class="all-c c12" id="draggable12">
+                <div class="de hid">删除</div>
+                <img src="images/12.jpg" alt="形状12">
+            </div>
+            <!-- 组件13 -->
+            <div class="all-c c13" id="draggable13">
+                <div class="de hid">删除</div>
+                <img src="images/13.jpg" alt="形状13">
+            </div>
+            <!-- 组件14 -->
+            <div class="all-c c14" id="draggable14">
+                <div class="de hid">删除</div>
+                <img src="images/14.jpg" alt="形状13">
+            </div>
+            <!-- 组件15 -->
+            <div class="all-c c15" id="draggable15">
+                <div class="de hid">删除</div>
+                <img src="images/15.jpg" alt="形状13">
+            </div>
+            <!-- 组件16 -->
+            <div class="all-c c16" id="draggable16">
+                <div class="de hid">删除</div>
+                <img src="images/16.jpg" alt="形状13">
+            </div>
+            <!-- 组件17 -->
+            <div class="all-c c17" id="draggable17">
+                <div class="de hid">删除</div>
+                <img src="images/17.jpg" alt="形状13">
+            </div>
+            <!-- 组件18 -->
+            <div class="all-c c18" id="draggable18">
+                <div class="de hid">删除</div>
+                <img src="images/18.jpg" alt="形状13">
+            </div>
+            <!-- 组件19 -->
+            <div class="all-c c19" id="draggable19">
+                <div class="de hid">删除</div>
+                <img src="images/19.jpg" alt="形状13">
+            </div>
+            <!-- 组件20 -->
+            <div class="all-c c20" id="draggable20">
+                <div class="de hid">删除</div>
+                <img src="images/20.jpg" alt="形状13">
+            </div>
+            <!-- 组件21 -->
+            <div class="all-c c21" id="draggable21">
+                <div class="de hid">删除</div>
+                <img src="images/21.jpg" alt="形状13">
+            </div>
+            <!-- 组件22 -->
+            <div class="all-c c22" id="draggable22">
+                <div class="de hid">删除</div>
+                <img src="images/22.jpg" alt="形状13">
+            </div>
+            <!-- 组件23 -->
+            <div class="all-c c23" id="draggable23">
+                <div class="de hid">删除</div>
+                <img src="images/23.jpg" alt="形状13">
+            </div>
+            <!-- 组件24 -->
+            <div class="all-c c24" id="draggable24">
+                <div class="de hid">删除</div>
+                <img src="images/24.jpg" alt="形状13">
             </div>
         </div>
     </div>
@@ -76,24 +380,24 @@
         //在页面加载完之后加载jquery
         $().ready(function (e) {
             //拖拽复制体
-            $("#draggable3").draggable({
+            $('div[id^="draggable"]').draggable({
                 helper: "clone",
                 cursor: "move"
             });
             //释放后
-            $('td[class^="target"]').droppable({
+            $('td[id^="target"]').droppable({
                 drop: function (event, ui) {
                     $(this).children().remove();
+                    $(this).find('div[id^="draggable"]').css("width", "100px");
                     var source = ui.draggable.clone();
                     $(this).on("click", ".de", function () {
                         source.remove();
+                        for (var k = 0; k < $("table tr").length; k++) {
+                            if ($("tr").eq(k).find("td").eq(3).html()) {
+                                $("tr").eq(k).find("td").eq(3).html('');
+                            }
+                        }
                     })
-                    // $('<img/>', {
-                    //     style: 'display:none;',
-                    //     click: function () {
-                    //         source.remove();
-                    //     }
-                    // }).appendTo(source);
                     source.mouseenter(function () {
                         $(this).find(".de").show();
                     });
@@ -101,14 +405,23 @@
                         $(this).find(".de").hide();
                     });
                     $(this).append(source);
+                    if ($(this).next("td").html() != '') {
+                        $(this).next("td").html('')
+                    }
                 }
             });
         });
-        $(".dayin").click(function () {
-            var val = $("td").eq(1).children(".c1").children("input").length;
-            var sum = 0;
-            for (var i = 0; i < val; i++) {
-                $("td").eq(2).html(sum);
+        $("#m_calculate").click(function () {
+            var mTr = $("table tr");
+            var val = [];
+            for (var i = 1; i < mTr.length; i++) {
+                val.push($("tr").eq(i).find("td input").length)
+                // console.log(val[i - 1]);
+                var sum = 0;
+                for (var j = 0; j < val[i - 1]; j++) {
+                    sum += parseFloat($("tr").eq(i).find("td input").eq(j).val());
+                    var a1 = $("tr").eq(i).find("td").eq(3).html(sum);
+                }
             }
         })
     </script>
