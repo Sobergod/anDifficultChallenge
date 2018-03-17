@@ -1,7 +1,111 @@
-.m-table {
 
+/* 功能按钮 */
+.option-head {
+    padding-top: 20px;
+    padding-left: 20px;
 }
+.nav button {
+    width: 50px;
+    height: 50px;
+}
+
+/* 内容主体 */
+.container {
+    width: 900px;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+/* 表头 */
+.title-head {
+    position: relative;
+    text-align: center;
+    color: tomato;
+}
+
+.title-wrap {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.title-head h1 {
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.title-head input {
+    color: #000;
+}
+
+.pageinfo {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    color: tomato;
+}
+
+.info {
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+
+.info input {
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+.address {
+    float: left;
+}
+
+.time {
+    margin-left: 20%;
+    float: left;
+}
+
+.time input {
+    width: 20px;
+}
+
+
+/* 图片选区 */
+
+.choosePic-wrap {
+    position: fixed;
+    top: 0;
+    right: 40px;
+    width: 400px;
+}
+
 .choosePic {
     height: 500px;
     border: 1px solid #000;
+}
+
+/* 显示所有 */
+#showAll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 1000px;
+}
+
+/* 表格 */
+.first-table {
+    float: left;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.second-table {
+    float: left;
+}
+/* 没有边框 */
+.noBorder {
+    border: none;
 }
