@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="component/component.css">
-    <title>Document</title>
+    <title>钢筋下料单</title>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
     <div class="option-head">
         <div class="nav print-hid">
             <button id="zhengli">整理</button>
+            <button id="paixu">排序</button>
             <button id="m_calculate">计算</button>
             <button id="m_print">打印</button>
         </div>
@@ -38,203 +39,211 @@
                     <input type="text">
                 </div>
                 <div class="time">
-                    <span>20 <input type="text">年</span>
-                    <span><input type="text">月</span>
-                    <span><input type="text">日</span>
+                    <span>20
+                        <input type="text">年</span>
+                    <span>
+                        <input type="text">月</span>
+                    <span>
+                        <input type="text">日</span>
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
+        <table id="tbList" class="test"></table>
         <div class="wrap  m-table">
             <div class="first-table">
-                <table>
-                    <tr>
-                        <th class="print-hid">序号</th>
-                        <th>直径</th>
-                        <th>图形</th>
-                        <th>开料长度</th>
-                        <th>条数</th>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">1</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">2</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">3</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">4</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">5</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">6</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">7</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">8</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">9</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">10</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">11</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">12</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">13</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">14</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">15</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">16</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">17</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">18</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">19</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="print-hid">20</td>
-                        <td>
-                            <input type="text">
-                        </td>
-                        <td id="target1"></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                <table id="tbList">
+                    <thead>
+                        <tr>
+                            <th class="print-hid">序号</th>
+                            <th>直径</th>
+                            <th>图形</th>
+                            <th>开料长度</th>
+                            <th>条数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="print-hid">1</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">2</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">3</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">4</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">5</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">6</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">7</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">8</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">9</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">10</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">11</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">12</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">13</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">14</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">15</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">16</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">17</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">18</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">19</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="print-hid">20</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td id="target1"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="second-table">
@@ -664,11 +673,22 @@
             </div>
         </div>
     </div>
+    <style>
+        .long {
+            width: 200px;
+            height: 200px;
+            background: #fff;
+        }
+    </style>
     <!-- 显示 -->
     <div id="showAll"></div>
     <script src="lib/jquery2.1.1.js"></script>
-    <script src="https://cdn.bootcss.com/jqueryui/1.11.0/jquery-ui.js"></script>
+    <script src="lib/jquery.ui.1.12.1.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.tablesorter/2.29.6/js/jquery.tablesorter.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // $("#tbList").tablesorter();
+    </script>
 </body>
 
 </html>
