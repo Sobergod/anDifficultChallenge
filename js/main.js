@@ -11,9 +11,9 @@ $().ready(function (e) {
             $(this).children().remove();
             $(this).find('div[id^="draggable"]').css("width", "100px");
             var source = ui.draggable.clone();
-            $(this).on("click", ".de", function () {
+            $(this).on("dblclick",'.all-c', function () {
                 source.remove();
-                console.log($(this).parent().next().html());
+                // console.log($(this).parent().next().html());
                 $(this).parent().next().html("");
                 // for (var k = 0; k < $("table tr").length; k++) {
                 //     if ($("tr").eq(k).find("td").eq(3).html()) {
@@ -22,10 +22,10 @@ $().ready(function (e) {
                 // }
             })
             source.mouseenter(function () {
-                $(this).find(".de").show();
+                // $(this).find(".de").show();
             });
             source.mouseleave(function () {
-                $(this).find(".de").hide();
+                // $(this).find(".de").hide();
             });
             $(this).append(source);
             if ($(this).next("td").html() != '') {
@@ -89,11 +89,12 @@ $("input[class^='c']").blur(function () {
 })
 // 表格排序方法
 $("#paixu").click(function () {
+    // 排表1
     var sortArr = [];
     var domArr = [];
     for (var i = 1; i <= 20; i++) {
-        var a1 = $("tr").eq(i).children("td").eq(1).find("input").val();
-        var aDom = $("tr").eq(i);
+        var a1 = $("#tbList tr").eq(i).children("td").eq(1).find("input").val();
+        var aDom = $("#tbList tr").eq(i);
         if (a1) {
             var sortDom = {};
             sortDom.domId = a1;
@@ -108,6 +109,26 @@ $("#paixu").click(function () {
     for(var j = 0;j< domArr.length;j++) {
         $("#tbList tbody").before(domArr[j].tDom);
     }
+    // 排表2
+    var sortArr1 = [];
+    var domArr1 = [];
+    for (var i1 = 1; i1 <= 20; i1++) {
+        var a11 = $("#tbListt tr").eq(i1).children("td").eq(1).find("input").val();
+        var aDom1 = $("#tbListt tr").eq(i1);
+        if (a11) {
+            var sortDom1 = {};
+            sortDom1.domId1 = a11;
+            sortDom1.tDom1 = aDom1;
+            domArr1.push(sortDom1);
+        }
+    }
+    // console.log(sortArr.sort(NumAscSort));
+    domArr1.sort(compare('domId1'));
+    // console.log(domArr[0].tDom);
+    // 创建节点插入dom完成排序
+    for(var j1 = 0;j1< domArr1.length;j1++) {
+        $("#tbListt tbody").before(domArr1[j1].tDom1);
+    }
 })
 // 对象排序规则
 function compare(property){
@@ -118,4 +139,7 @@ function compare(property){
     }
 }
 
-// 合并方法
+// 等值合并方法
+$("#hebing").click(function() {
+
+})

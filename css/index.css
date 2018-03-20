@@ -1,6 +1,9 @@
 
 /* 功能按钮 */
 .option-head {
+    position: fixed;
+    width: 100%;
+    top: 0;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -11,6 +14,7 @@
 
 /* 内容主体 */
 .container {
+    margin-top: 50px;
     width: 900px;
 }
 .wrap {
@@ -83,6 +87,7 @@
 
 .choosePic {
     height: 500px;
+    overflow: scroll;
     border: 1px solid #000;
 }
 
