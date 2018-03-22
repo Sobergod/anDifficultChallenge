@@ -12,12 +12,38 @@
 </head>
 
 <body>
+    <style>
+        #bd {
+            position: fixed;
+            top: 200px;
+            width: 100px;
+            height: 60px;
+            display: none;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .queding {
+            padding: 20px;
+            border: 1px solid tomato;
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+    <div id="bd">
+        <select name="" id="tSelect">
+            <option value="-1">选一个数字</option>
+            <option value="0.617">0.617</option>
+            <option value="0.67">0.67</option>
+            <option value="0.88">0.88</option>
+        </select>
+        <div class="queding">确定</div>
+    </div>
+    <div id="ten" style="display:none"></div>
     <!-- 设置按钮 -->
     <div class="option-head">
         <div class="nav print-hid">
-            <button id="hebing">合并</button>
+            <button id="hebing">合并并计算重量</button>
             <button id="paixu">排序</button>
-            <button id="m_calculate">计算</button>
+            <button id="m_calculate">计算开料长度</button>
             <button id="m_print">打印</button>
         </div>
     </div>
@@ -49,7 +75,6 @@
                 <div class="clear"></div>
             </div>
         </div>
-        <table id="tbList" class="test"></table>
         <div class="wrap  m-table">
             <div class="first-table">
                 <table id="tbList">
@@ -70,7 +95,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">2</td>
@@ -79,7 +106,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">3</td>
@@ -88,7 +117,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">4</td>
@@ -97,7 +128,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">5</td>
@@ -106,7 +139,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">6</td>
@@ -115,7 +150,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">7</td>
@@ -124,7 +161,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">8</td>
@@ -133,7 +172,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">9</td>
@@ -142,7 +183,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">10</td>
@@ -151,7 +194,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">11</td>
@@ -160,7 +205,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">12</td>
@@ -169,7 +216,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">13</td>
@@ -178,7 +227,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">14</td>
@@ -187,7 +238,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">15</td>
@@ -196,7 +249,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">16</td>
@@ -205,7 +260,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">17</td>
@@ -214,7 +271,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">18</td>
@@ -223,7 +282,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">19</td>
@@ -232,7 +293,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">20</td>
@@ -241,7 +304,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -265,7 +330,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">2</td>
@@ -274,7 +341,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">3</td>
@@ -283,7 +352,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">4</td>
@@ -292,7 +363,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">5</td>
@@ -301,7 +374,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">6</td>
@@ -310,7 +385,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">7</td>
@@ -319,7 +396,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">8</td>
@@ -328,7 +407,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">9</td>
@@ -337,7 +418,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">10</td>
@@ -346,7 +429,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">11</td>
@@ -355,7 +440,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">12</td>
@@ -364,7 +451,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">13</td>
@@ -373,7 +462,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">14</td>
@@ -382,7 +473,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">15</td>
@@ -391,7 +484,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">16</td>
@@ -400,7 +495,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">17</td>
@@ -409,7 +506,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">18</td>
@@ -418,7 +517,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">19</td>
@@ -427,7 +528,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                         <tr>
                             <td class="print-hid">20</td>
@@ -436,7 +539,9 @@
                             </td>
                             <td id="target1"></td>
                             <td></td>
-                            <td><input type="text"></td>
+                            <td>
+                                <input type="text">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -593,7 +698,7 @@
                     <div class="all-c c13" id="draggable13">
                         <div class="de hid">删除</div>
                         <img src="images/13.jpg" alt="形状13">
-                        <input type="hidden" class="c13-i1" value="12">
+                        <input type="hidden" class="c13-i1" value="0.65">
                     </div>
                 </div>
                 <!-- 组件14 -->
@@ -601,7 +706,7 @@
                     <div class="all-c c14" id="draggable14">
                         <div class="de hid">删除</div>
                         <img src="images/14.jpg" alt="形状14">
-                        <input type="hidden" class="c14-i1" value="12">
+                        <input type="hidden" class="c14-i1" value="1.25">
                     </div>
                 </div>
                 <!-- 组件15 -->
@@ -703,17 +808,18 @@
                     </div>
                 </div>
                 <!-- 组件24 -->
-                <div class="all-c-wrap">
+                <!-- <div class="all-c-wrap">
                     <div class="all-c c24" id="draggable24">
                         <div class="de hid">删除</div>
                         <img src="images/24.jpg" alt="形状24">
                     </div>
-                </div>
+                </div> -->
                 <!-- 组件25 -->
                 <div class="all-c-wrap">
                     <div class="all-c c25" id="draggable25">
                         <div class="de hid">删除</div>
                         <img src="images/25.jpg" alt="形状25">
+                        <input type="text" class="c25-i1">
                     </div>
                 </div>
                 <!-- 组件26 -->
@@ -740,11 +846,7 @@
     <div id="showAll"></div>
     <script src="lib/jquery2.1.1.js"></script>
     <script src="lib/jquery.ui.1.12.1.js"></script>
-    <script src="https://cdn.bootcss.com/jquery.tablesorter/2.29.6/js/jquery.tablesorter.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        // $("#tbList").tablesorter();
-    </script>
 </body>
 
 </html>

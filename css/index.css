@@ -1,6 +1,7 @@
 
 /* 功能按钮 */
 .option-head {
+    z-index: 666;
     position: fixed;
     width: 100%;
     top: 0;
@@ -8,8 +9,8 @@
     padding-left: 20px;
 }
 .nav button {
-    width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 /* 内容主体 */
@@ -79,6 +80,7 @@
 /* 图片选区 */
 
 .choosePic-wrap {
+    z-index: 888;
     position: fixed;
     top: 0;
     right: 40px;
